@@ -1,12 +1,9 @@
-<html>
-<head>
-</head>
-
-<body>
+{% extends 'base.html' %}
+{% block content %}
     {% for ingreds in recipes %}
         {{ingreds.secret_serves}}
         {{ingreds.secret_difficulty}}
         {{ingreds.secret_time}}
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
