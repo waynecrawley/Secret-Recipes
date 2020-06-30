@@ -33,12 +33,19 @@ def insert_recipes():
     recipes.insert_one(request.form.to_dict())
     return redirect(url_for('get_recipes'))
 
-#Function to Display each individual recipe
+#Function to render each individual recipe
 @app.route('/show_recipe/<recipe_id>')
 def show_recipe(recipe_id):
     return render_template("recipe.html",
             recipe=mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)}))
 
+#Function to render edit page
+@app.route('/edit_recipe/<recipe_id>')
+def edit_recipe(recipe_id):
+    the_recipe =  mongo.db.tasks.find_one({"_id": ObjectId(recipe_id)})
+    all_course =  mongo.db.course.find()
+    return render_template('editrecipe.html', recipe=the_recipe,
+                           course=all_course)
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3>Edit Receipes</h3>
+<!--Added a custom form below that pushes user imput to the MongoDB Database-->
+<div class="row">
+    <form action="{{ url_for('insert_recipes') }}" method="POST" class="col s12 form-height" >
+        <div class="row">
+        
+         <div class="input-field col s12">
+          <input placeholder="Recipe Name" name="recipe_name" id="recipe_name" type="text" class="validate">
+          <label for="recipe_name">Recipe Name</label>
+        </div>
+        </div>
+        <div class="input-field col s12">
+            <select id="recipe_difficulty" name="recipe_difficulty">
+            <option value="" selected>Choose your option</option>
+            <option value="Easy"> Easy</option>
+            <option value="Medium"> Medium</option>
+            <option value="Hard"> Hard</option>
+            
+            </select>
+            <label for="recipe_difficulty">Difficulty</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_1" id="ingredient_1" type="text" class="validate">
+          <label for="Ingredient_1">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_2" id="ingredient_2" type="text" class="validate">
+          <label for="Ingredient_2">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_3" id="ingredient_3" type="text" class="validate">
+          <label for="Ingredient_3">Ingredients</label>
+        </div>
+        
+       
+
+        <div class="row">
+         <button class="btn waves-effect waves-light" type="submit">Update
+            <i class="material-icons right">send</i>
+        </button>
+        </div>
+    </form>
+  </div>
+
+{% endblock %}
