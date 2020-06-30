@@ -23,7 +23,8 @@ def get_recipes():
 #Function to render addrecipes page
 @app.route('/add_recipe')
 def add_recipe():
-    return render_template('addrecipes.html')
+    return render_template('addrecipes.html',
+    course=mongo.db.course.find())
 
 
 #Fuction to insert recipes into the Database
