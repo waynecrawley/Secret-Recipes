@@ -2,11 +2,12 @@
 {% block content %}
 
 <h3>Add Receipes</h3>
-<!--Added a custom form below-->
+<!--Added a custom form below that pushes user imput to the MongoDB Database-->
 <div class="row">
     <form action="{{ url_for('insert_recipes') }}" method="POST" class="col s12 form-height" >
         <div class="row">
-        <div class="input-field col s12">
+        
+         <div class="input-field col s12">
           <input placeholder="Recipe Name" name="recipe_name" id="recipe_name" type="text" class="validate">
           <label for="recipe_name">Recipe Name</label>
         </div>
@@ -20,6 +21,21 @@
             
             </select>
             <label for="recipe_difficulty">Difficulty</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_1" id="ingredient_1" type="text" class="validate" class="required">
+          <label for="Ingredient_1">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_2" id="ingredient_2" type="text" class="validate" class="required">
+          <label for="Ingredient_2">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_3" id="ingredient_3" type="text" class="validate" class="required">
+          <label for="Ingredient_3">Ingredients</label>
         </div>
         
        
