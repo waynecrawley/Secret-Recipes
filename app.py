@@ -25,12 +25,20 @@ def get_recipes():
 def add_recipe():
     return render_template('addrecipes.html')
 
+
 #Fuction to insert recipes into the Database
 @app.route('/insert_recipes', methods=['POST'])
 def insert_recipes():
     recipes = mongo.db.recipes
     recipes.insert_one(request.form.to_dict())
     return redirect(url_for('get_recipes'))
+
+#Function to Display each individual recipe
+@app.route('/show_recipe/<recipe_id>')
+def show_recipe(recipe_id):
+    return render_template("recipe.html",
+            recipe=mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)}))
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

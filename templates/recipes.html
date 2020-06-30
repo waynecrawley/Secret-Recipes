@@ -2,7 +2,7 @@
 {% block content %}
     <!--loops through the recipe Database and displays in cards below-->
     <h1 class="test">Latest Recipes</h1>
-    {% for ingreds in recipes %}
+    {% for recipe in recipes %}
     <div class="row">
         <div class="col s12 m7">
           <div class="card">
@@ -10,7 +10,7 @@
               <img src="images/sample-1.jpg">
             </div>
             <div>
-                <a href="#">This is a link</a>
+                <a href="{{url_for('show_recipe', recipe_id=recipe._id,)}}">test</a>
             </div>
             <div class="card-content">
         <table>
@@ -24,9 +24,9 @@
 
         <tbody>
           <tr>
-            <td><i class="material-icons">access_time</i>{{ingreds.recipe_time}}</td>
-            <td><i class="material-icons">people</i>{{ingreds.recipe_serves}}</td>
-            <td><i class="material-icons">thumbs_up_down</i>{{ingreds.recipe_difficulty}}</td>
+            <td><i class="material-icons">access_time</i>{{recipe.recipe_time}}</td>
+            <td><i class="material-icons">people</i>{{recipe.recipe_serves}}</td>
+            <td><i class="material-icons">thumbs_up_down</i>{{recipe.recipe_difficulty}}</td>
           </tr>
         </tbody>
       </table>
