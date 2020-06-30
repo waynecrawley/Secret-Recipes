@@ -36,4 +36,95 @@ We continually tweak and adjust this template to help give you the best experien
 
 --------
 
+{% for ingreds in recipes %}
+        {{ingreds.recipe_name}}
+        {{ingreds.recipe_serves}}
+        {{ingreds.recipe_time}}
+        {{ingreds.recipe_difficulty}}
+
 Happy coding!
+
+ <div class="input-field col s12">
+            <select id="recipe_serves">
+            <option value="" selected>Choose your option</option>
+            <option value="1"> 1 person</option>
+            <option value="2"> 2 people</option>
+            <option value="3"> 3 people</option>
+            <option value="4"> 4 people</option>
+            </select>
+            <label for="recipe_serves">Serves</label>
+        </div>
+
+        <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Enter cooking time" id="recipe_time" type="text" class="validate">
+          <label for="recipe_time">Cooking Time</label>
+        </div>
+        </div>
+
+         <div class="input-field col s12">
+            <select id="recipe_difficulty">
+            <option value="" selected>Choose your option</option>
+            <option value="1"> Easy</option>
+            <option value="2"> Medium</option>
+            <option value="3"> Hard</option>
+            
+            </select>
+            <label for="recipe_difficulty">Difficulty</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_1" type="text" class="validate">
+          <label for="Ingredient_1">Ingredients</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_2" type="text" class="validate">
+          <label for="Ingredient_2">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_3" type="text" class="validate">
+          <label for="Ingredient_3">Ingredients</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_4" type="text" class="validate">
+          <label for="Ingredient_4">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_5" type="text" class="validate">
+          <label for="Ingredient_5">Ingredients</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_6" type="text" class="validate">
+          <label for="Ingredient_6">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_7" type="text" class="validate">
+          <label for="Ingredient_7">Ingredients</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_8" type="text" class="validate">
+          <label for="Ingredient_8">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_9" type="text" class="validate">
+          <label for="Ingredient_9">Ingredients</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" id="ingredient_10" type="text" class="validate">
+          <label for="Ingredient_10">Ingredients</label>
+        </div>
+
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                     <textarea id="recipe_howtocook" class="materialize-textarea"></textarea>
+                     <label for="textarea1">How To Cook</label>
+                    </div>
+                </div>
+            </form>
+        </div>
