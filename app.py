@@ -16,9 +16,17 @@ mongo = PyMongo(app)
 
 # Function used to render Home page and display all recipes
 @app.route('/')
+@app.route('/get_home')
+def get_home():
+    return render_template("home.html",
+        recipes=mongo.db.recipes.find().sort("_id", -1).limit(4))
+
+
 @app.route('/get_recipes')
 def get_recipes():
-    return render_template("recipes.html", recipes=mongo.db.recipes.find().sort("_id", -1).limit(4))
+    return render_template("recipes.html",
+        recipes=mongo.db.recipes.find().sort("_id", -1))
+
 
 # Function to render addrecipes page
 @app.route('/add_recipe')
@@ -40,6 +48,7 @@ def show_recipe(recipe_id):
     return render_template("recipe.html",
             recipe=mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)}))
 
+
 # Function to render edit page
 @app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
@@ -52,13 +61,24 @@ def edit_recipe(recipe_id):
 @app.route('/update_recipe/<recipe_id>', methods=["POST"])
 def update_recipe(recipe_id):
     recipes = mongo.db.recipes
-    recipes.update( {'_id': ObjectId(recipe_id)},
+    recipes.update({'_id': ObjectId(recipe_id)},
     {
-        'recipe_name':request.form.get('recipe_name'),
-        'course_type':request.form.get('course_type'),
+        'recipe_name': request.form.get('recipe_name'),
+        'course_type': request.form.get('course_type'),
+        'recipe_serves': request.form.get('recipe_serves'),
+        'recipe_time': request.form.get('recipe_time'),
         'ingredient_1': request.form.get('ingredient_1'),
         'ingredient_2': request.form.get('ingredient_2'),
-        'ingredient_3':request.form.get('ingredient_3')
+        'ingredient_3': request.form.get('ingredient_3'),
+        'ingredient_4': request.form.get('ingredient_4'),
+        'ingredient_5': request.form.get('ingredient_5'),
+        'ingredient_6': request.form.get('ingredient_6'),
+        'ingredient_7': request.form.get('ingredient_7'),
+        'ingredient_8': request.form.get('ingredient_8'),
+        'ingredient_9': request.form.get('ingredient_9'),
+        'ingredient_10': request.form.get('ingredient_10'),
+        'method': request.form.get('method')
+
     })
     return redirect(url_for('get_recipes'))
 

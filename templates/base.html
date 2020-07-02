@@ -1,5 +1,5 @@
-<!--The Base Html Page is page to save you time replicating code. This Html, Javascript etc will be used across all pages-->
 <!DOCTYPE html>
+<!--The Base Html Page is page to save you time replicating code. This Html, Javascript etc will be used across all pages-->
 <html>
     <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,8 +14,8 @@
                 <a href="#" class="brand-logo">Secret Recipes</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">All Recipes</a></li>
+                    <li><a href="{{url_for('get_home')}}">Home</a></li>
+                    <li><a href="{{url_for('get_recipes')}}">All Recipes</a></li>
                     <li><a href="{{url_for('add_recipe')}}">Add Recipes</a></li>
                 </ul>
                  <ul class="side-nav" id="mobile-demo">

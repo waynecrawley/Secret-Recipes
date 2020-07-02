@@ -1,8 +1,15 @@
+<!DOCTYPE html>
 {% extends 'base.html' %}
 {% block content %}
-
+<div class="col s12">
+<div class= "row">
+<div class="col s6">
 <h3>Add Receipes</h3>
-<!--Added a custom form below that pushes user imput to the MongoDB Database-->
+</div>
+
+</div>
+<div>
+<!--Added a custom form below that Posts user imput to the MongoDB Database-->
 <div class="row">
     <form action="{{ url_for('insert_recipes') }}" method="POST" class="col s12 form-height" >
         <div class="row">
@@ -12,6 +19,12 @@
           <label for="recipe_name">Recipe Name</label>
         </div>
         </div>
+
+        <div class="input-field col s12">
+          <input placeholder="How many people does it serve" name="recipe_serves" id="recipe_serves" type="text" class="validate">
+          <label for="recipe_serves">Serves</label>
+        </div>
+<!-- loops through course collection and displays all courses in a drop down menu-->
         <div class="input-field col s12">
             <select id="course" name="course_type">
             <option value="" diasabled selected>Choose your option</option>
@@ -20,6 +33,11 @@
             {% endfor %}
             </select>
             <label>Course Type</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input placeholder="How many minutes to make" name="recipe_time" id="recipe_time" type="text" class="validate">
+          <label for="recipe_time">Cooking Time</label>
         </div>
 
         <div class="input-field col s6">
@@ -36,15 +54,61 @@
           <input placeholder="Ingredients" name="ingredient_3" id="ingredient_3" type="text" class="validate">
           <label for="Ingredient_3">Ingredients</label>
         </div>
-        
-       
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_4" id="ingredient_4" type="text" class="validate">
+          <label for="Ingredient_4">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_5" id="ingredient_5" type="text" class="validate">
+          <label for="Ingredient_5">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_6" id="ingredient_6" type="text" class="validate">
+          <label for="Ingredient_6">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_7" id="ingredient_7" type="text" class="validate">
+          <label for="Ingredient_7">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_8" id="ingredient_8" type="text" class="validate">
+          <label for="Ingredient_8">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_9" id="ingredient_9" type="text" class="validate">
+          <label for="Ingredient_9">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Ingredients" name="ingredient_10" id="ingredient_10" type="text" class="validate">
+          <label for="Ingredient_10">Ingredients</label>
+        </div>
 
         <div class="row">
-         <button class="btn waves-effect waves-light" type="submit">Submit
-            <i class="material-icons right">send</i>
-        </button>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea placeholder="Cooking Instructions" id="method" name="method"  class="materialize-textarea"></textarea>
+          <label for="method">Method</label>
+        </div>
+      </div>
+       <div class="row">
+            <button class="btn waves-effect waves-light" type="submit">Add recipe
+                <i class="material-icons right"></i>
+             </button>
         </div>
     </form>
-  </div>
+</div>
+    </form>
+    </div>
+
+         
+  
 
 {% endblock %}

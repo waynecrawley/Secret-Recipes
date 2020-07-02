@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!--loops through the recipe Database and displays all info in cards below-->
+    <h1 class="test">Latest Recipes</h1>
+    {% for recipe in recipes %}
+    <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+            </div>
+            <div>
+                <a href="{{url_for('show_recipe', recipe_id=recipe._id,)}}">{{recipe.recipe_name}}</a>
+            </div>
+            <div class="card-content">
+        <table>
+        <thead>
+          <tr>
+              <th>Time</th>
+              <th>Serves</th>
+              <th>Course</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><i class="material-icons">access_time</i>{{recipe.recipe_time}}</td>
+            <td><i class="material-icons">people</i>{{recipe.recipe_serves}}</td>
+            <td><i class="material-icons">thumbs_up_down</i>{{recipe.course_type}}</td>
+          </tr>
+        </tbody>
+      </table>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    
+
+    {% endfor %}
+
+{% endblock %}
