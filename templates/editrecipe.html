@@ -8,7 +8,7 @@
         <div class="row">
         
               <div class="input-field col s12">
-          <input placeholder="Recipe Name" name="recipe_name" id="recipe_name" type="text" class="validate" value="{{recipes.recipe_name}}">
+          <input placeholder="Recipe Name" name="recipe_name" required="" id="recipe_name" type="text" class="validate" value="{{recipes.recipe_name}}">
           <label for="recipe_name">Recipe Name</label>
         </div>
         </div>
@@ -85,6 +85,11 @@
         <div class="input-field col s6">
           <input placeholder="Ingredients" name="ingredient_10" id="ingredient_10" type="text" class="validate" value="{{recipes.ingredient_10}}">
           <label for="Ingredient_10">Ingredients</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="please enter image URL" name="image"  id="image" type="text" class="validate">
+          <label for="image">images</label>
         </div>
 
         <div class="row">

@@ -104,3 +104,8 @@
 
 {% endblock %}
  
+
+ @app.route('/show_recipes/<course_type>')
+def show_recipes(course_type):
+    return render_template("show-recipes.html",
+            recipes=mongo.db.recipes.find({'course_type': course_type}))

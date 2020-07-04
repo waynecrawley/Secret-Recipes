@@ -35,7 +35,7 @@ def add_recipe():
     course=mongo.db.course.find())
 
 
-# Fuction to insert recipes into the Database
+# Fuction to insert recipes into the DatabaseS
 @app.route('/insert_recipes', methods=['POST'])
 def insert_recipes():
     recipes = mongo.db.recipes
@@ -47,6 +47,11 @@ def insert_recipes():
 def show_recipe(recipe_id):
     return render_template("recipe.html",
             recipe=mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)}))
+
+@app.route('/show_recipes/<main>')
+def show_recipes(course_type):
+    return render_template("show-recipes.html",
+            recipes=mongo.db.recipes.find({'course_type': course_type}))
 
 
 # Function to render edit page
@@ -87,7 +92,6 @@ def update_recipe(recipe_id):
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({'_id': ObjectId(recipe_id)})
     return redirect(url_for('get_recipes'))
-
 
 
 if __name__ == '__main__':
