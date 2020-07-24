@@ -67,16 +67,22 @@ h1{
 .latest{
     margin-bottom: 0;
     color: white;
+    text-align: center;
 }
 .card-back{
     background-color: black;
 }
 
 .card-space{
-    width: 100%
+    width: 100%;
+}
+
+.recipe-title{
+    font-size: 60px;
 }
 .margin-row{
     margin: 0;
+    background-color: black;
 }
 
 
