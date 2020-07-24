@@ -10,6 +10,7 @@ nav {
 nav .button-collapse i {
     color: black;
 }
+
 nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
     display: block;
     font-size: 38px;
@@ -78,11 +79,61 @@ h1{
     margin: 0;
 }
 
-@media only screen and (min-width: 601px){
-.row .col.m6 {
+
+/*-- Individual Recipe page styling  --*/
+
+.recipe_image {
     width: 100%;
+    height: 40vh;
+}
+
+.row .col.s12 {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1024px){
+.row .col.m6 {
+    width: 50%;
     margin-left: auto;
     left: auto;
     right: auto;
 }}
+
+
+/*-- Recipe page --*/
+.back-colour{
+    background-color: black;
+    color: white;
+}
+.recipe-header{
+    text-align: center;
+}
+
+.table-style{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.ingred-head{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ingred-style{
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.btn-edit{
+    margin-left: 600px;
+    margin-right: 15px;
+    
+}
+
+.btn-remove{
+    background-color: red;
+}
 
