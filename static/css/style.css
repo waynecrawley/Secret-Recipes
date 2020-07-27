@@ -27,11 +27,11 @@ nav ul a {
 
 nav .brand-logo{
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .side-nav li>a {
-    font-size: 25px;  
+    font-size: 35px;  
 }
 
 /*-- Landing Page----*/
@@ -154,9 +154,6 @@ h1{
 
 @media only screen and (min-width: 0){
 html {
-    font-size: 30px;
+    font-size: 40px;
 }}
 
-input {
-    font-size: 1.5rem;
-}
