@@ -156,3 +156,7 @@ h1{
 html {
     font-size: 30px;
 }}
+
+input {
+    font-size: 1.5rem;
+}
