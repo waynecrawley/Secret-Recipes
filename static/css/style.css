@@ -54,12 +54,14 @@ nav .brand-logo{
     text-align: center;
     font-size: 2rem;
     margin-top: 10px;
+    font-family: 'Pacifico', cursive;
 }
+
 
 .home-btn {
     background-color: black;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .btn, .btn-large, .btn-floating, .btn-large, .btn-flat {
@@ -91,17 +93,28 @@ nav .brand-logo{
 h1{
     text-align: center;
     font-size: 2rem;
-    font-family: 'Pacifico', cursive;
+    
 }
 
-.recipe-title{
+.card .card-title {
     font-size: 60px;
+    font-weight: 300;
+    font-family: 'Pacifico', cursive;
+    margin-top: 20px;
+    padding-bottom: 40px;
 }
+
+.recipe-link{
+    margin-left: 20px;
+}
+.material-icons {
+    font-size: 35px;
+}
+
 .margin-row{
     margin: 0;
     background-color: black;
 }
-
 
 /*-- Individual Recipe page styling  --*/
 
