@@ -15,13 +15,13 @@
         <div class="row">
         
          <div class="input-field col s12">
-          <input placeholder="Recipe Name" name="recipe_name" id="recipe_name" type="text" class="validate">
+          <input placeholder="Recipe Name" name="recipe_name" id="recipe_name" type="text"  class="validate" required="" aria-required="true">
           <label for="recipe_name">Recipe Name</label>
         </div>
         </div>
 
         <div class="input-field col s12">
-          <input placeholder="How many people does it serve" name="recipe_serves" id="recipe_serves" type="text" class="validate">
+          <input placeholder="How many people does it serve" name="recipe_serves" id="recipe_serves" type="text" class="validate" required="" aria-required="true"> 
           <label for="recipe_serves">Serves</label>
         </div>
 <!-- loops through course collection and displays all courses in a drop down menu-->
@@ -36,7 +36,7 @@
         </div>
 
         <div class="input-field col s12">
-          <input placeholder="How many minutes to make" name="recipe_time" id="recipe_time" type="text" class="validate">
+          <input placeholder="How many minutes to make" name="recipe_time" id="recipe_time" type="text" class="validate" required="" aria-required="true">
           <label for="recipe_time">Cooking Time</label>
         </div>
 
@@ -104,7 +104,7 @@
         </div>
       </div>
        <div class="row">
-            <button class="btn waves-effect waves-light" type="submit">Add recipe
+            <button class="btn waves-effect waves-light" name="action" type="submit">Add recipe
                 <i class="material-icons right"></i>
              </button>
         </div>
