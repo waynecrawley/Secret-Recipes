@@ -107,6 +107,18 @@ h1{
 .recipe-link{
     margin-left: 20px;
 }
+
+.recipe_images {
+    width: 100%;
+    height: 40vh;
+}
+
+.recipe_image {
+    width: 100%;
+    height: 40vh;
+}
+
+
 .material-icons {
     font-size: 35px;
 }
@@ -116,12 +128,25 @@ h1{
     background-color: black;
 }
 
+@media only screen and (min-width: 1024px){
+.card{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+    
+}
+
 /*-- Individual Recipe page styling  --*/
 
-.recipe_image {
+
+
+@media only screen and (min-width: 1024px){
+.recipe_images{
+    
     width: 100%;
     height: 40vh;
-}
+    margin-top: 80px;
+}}
 
 .row .col.s12 {
     width: 100%;
@@ -143,6 +168,7 @@ h1{
 }
 .recipe-header{
     text-align: center;
+    font-family: 'Pacifico', cursive;
 }
 
 .table-style{
@@ -154,6 +180,7 @@ h1{
 .ingred-head{
     text-align: center;
     text-decoration: underline;
+    font-family: 'Pacifico', cursive;
 }
 
 .ingred-style{
@@ -165,7 +192,7 @@ h1{
 }
 
 .btn-edit{
-    margin-left: 600px;
+    margin-left: 300px;
     margin-right: 15px;
     
 }
