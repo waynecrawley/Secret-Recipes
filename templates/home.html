@@ -4,7 +4,7 @@
     <div class="center">
     <img src="/static/images/chefhat.png" alt="chefs hat" class="home-image">
     <h1 class="home-message"> Tell us your secret!</h1>
-    <a class="waves-effect btn home-btn" href="{{url_for('add_recipe')}}">Add Recipe</a>
+    <a  id="buttonhome" class="waves-effect btn home-btn" href="{{url_for('add_recipe')}}">Add Recipe</a>
     </div>
     <div class="latest-bg">
     <h2 class="latest">Latest Recipes</h2>
@@ -24,11 +24,11 @@
                 <span class="card-title grey-text text-darken-4">{{recipe.recipe_name}}<i class="material-icons right">close</i></span>
                 <p>Here you can find the cooking time, total amount served and the course type.</p>
                 <p class="reveal-head"><strong> Time</strong></p>
-                <p class="reveal-sub"><i class="material-icons">access_time</i> {{recipe.recipe_time}}</p>
+                <p class="reveal-sub"><i class="material-icons">access_time</i>   {{recipe.recipe_time}}</p>
                 <p class="reveal-head"><strong>Serves</strong></p>
-                <p class="reveal-sub"><i class="material-icons">people</i> {{recipe.recipe_serves}}</p>
+                <p class="reveal-sub"><i class="material-icons">people</i>   {{recipe.recipe_serves}}</p>
                 <p class="reveal-head"><strong>Course Type</strong></p>
-                <p class="reveal-sub"><i class="material-icons">thumbs_up_down</i> {{recipe.course_type}}</p>
+                <p class="reveal-sub"><i class="material-icons">thumbs_up_down</i>   {{recipe.course_type}}</p>
             </div>
             </div>
         </div>
