@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h3>Edit Receipes</h3>
+<h3 class="add-header">Edit Receipes</h3>
 <!--a  form below that pushes user imput to the MongoDB Database-->
 <div class="row">
     <form action="{{ url_for('update_recipe', recipe_id=recipes._id) }}" method="POST" class="col s12 form-height" >
@@ -101,7 +101,7 @@
         </div>
       </div>
        <div class="row">
-            <button class="btn waves-effect waves-light" type="submit">Update
+            <button class="btn waves-effect waves-light add-btn" type="submit">Update
                 <i class="material-icons right"></i>
              </button>
         </div>

@@ -31,7 +31,9 @@ nav .brand-logo{
 }
 
 .side-nav li>a {
-    font-size: 35px;  
+    font-size: 35px; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
 }
 
 /*-- Landing Page----*/
@@ -138,8 +140,8 @@ h1{
 
 @media only screen and (min-width: 1024px){
 .card{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
     
 }
@@ -213,6 +215,7 @@ h1{
 .add-header{
     font-size: 1.8rem;
     font-family: 'Pacifico', cursive;
+    margin-left: 40px;
 
 }
 
