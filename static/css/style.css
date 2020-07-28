@@ -120,7 +120,15 @@ h1{
 
 
 .material-icons {
-    font-size: 35px;
+    font-size: 50px;
+}
+
+.reveal-head{
+    text-align: center;
+}
+
+.reveal-sub{
+    text-align: center;
 }
 
 .margin-row{
@@ -188,7 +196,6 @@ h1{
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
-    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .btn-edit{
@@ -203,8 +210,19 @@ h1{
 
 /*-- Add Recipes Style --*/
 
+.add-header{
+    font-size: 1.8rem;
+    font-family: 'Pacifico', cursive;
+
+}
+
 @media only screen and (min-width: 0){
 html {
     font-size: 40px;
 }}
+
+.add-btn{
+    background-color: black;
+    font-size: 35px;
+}
 
