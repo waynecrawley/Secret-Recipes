@@ -7,7 +7,7 @@
     <a  id="buttonhome" class="waves-effect btn home-btn" href="{{url_for('add_recipe')}}">Add Recipe</a>
     </div>
     <div class="latest-bg">
-    <h2 class="latest">Latest Recipes</h2>
+    <h3 class="latest">Latest Recipes</h3>
     </div>
     <!--loops through the recipe Database and displays all info in cards below-->
     {% for recipe in recipes %}
@@ -23,7 +23,6 @@
             </div>
             <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">{{recipe.recipe_name}}<i class="material-icons right">close</i></span>
-                <p>Here you can find the cooking time, total amount served and the course type.</p>
                 <p class="reveal-head"><strong> Time</strong></p>
                 <p class="reveal-sub"><i class="material-icons">access_time</i>   {{recipe.recipe_time}}</p>
                 <p class="reveal-head"><strong>Serves</strong></p>

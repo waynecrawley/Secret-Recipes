@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 <!-- This form displays previous forms info that was stored on the database for user to edit and send back to datbase -->
+<div class="col s12 form-border">
+<div class= "row">
+<div class="col s6">
 <h3 class="add-header">Edit Receipes</h3>
+</div>
+</div>
 <!--a  form below that pushes user imput to the MongoDB Database-->
 <div class="row">
     <form action="{{ url_for('update_recipe', recipe_id=recipes._id) }}" method="POST" class="col s12 form-height" >

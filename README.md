@@ -73,7 +73,6 @@ The website was built with a mobile first approach. The client wanted a website 
 + During development I used CRUD to make sure the database was fully functional before proceding with any further design process.
 + I then, worked through my user stories to make sure my website reached all the requirements of my user stories, before moving on to the more technical testing.
 + I ran the HTML for all pages through [W3C HTML Markup Validation](https://validator.w3.org/) by direct input. - **Working as intended**
-+ I ran the CSS through [W3C CSS Validation Service](http://www.css-validator.org/) by direct input. - **Working as intended**
 + All links tested manually - **Working as intended**
 + All buttons tested manually - **Working as intended**
 + Tested different screen sizes using Google Developer Tools.
