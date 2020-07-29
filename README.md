@@ -84,7 +84,7 @@ The website was built with a mobile first approach. The client wanted a website 
   * iPhone X - **Working as intended**
   * iPad - **Working as intended**
   * iPad Pro  - **Working as intended**
-  * Laptop with HiDPI screen 
+  * Laptop with HiDPI screen **Working as intended**
 
 + I got friends to test out the live site on Heroku and give me Feedback on any issues. 
 + I used my Huwawei P20 smart Android Phone to test website - **Working as intended**

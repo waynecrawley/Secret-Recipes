@@ -88,7 +88,7 @@ nav .brand-logo{
 /*-- Hides the Button for adding recipes on larger screen sizes--*/
 @media only screen and (min-width: 1024px){
 #buttonhome{
-     display: none;
+    display: none;
 }}
 
 
@@ -111,6 +111,7 @@ nav .brand-logo{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30PX;
+    margin-top: 0px;
 }
 
 .card-space{
@@ -168,8 +169,7 @@ h1{
 .card{
     margin-left: 20%;
     margin-right: 20%;
-}
-    
+}  
 }
 
 /*-- Individual Recipe page styling  --*/
