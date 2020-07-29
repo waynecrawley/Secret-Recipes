@@ -25,6 +25,8 @@ The website was built with a mobile first approach. The client wanted a website 
 + The website should be responsive, work on all devices and browsers. The website must consist of , recipes, be able to add,edit and delete recipes.
 ### Structure
 + The overall structure of the website is that of a branching structure.
+
+(https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/flowchart.png)
 ### Skeleton
 
 #### Wireframes
