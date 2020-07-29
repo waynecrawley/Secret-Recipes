@@ -26,7 +26,7 @@ The website was built with a mobile first approach. The client wanted a website 
 ### Structure
 + The overall structure of the website is that of a branching structure.
 
-(https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/flowchart.png)
+![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/flowchart.png)
 ### Skeleton
 
 #### Wireframes
