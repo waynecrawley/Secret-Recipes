@@ -28,9 +28,8 @@ The website was built with a mobile first approach. The client wanted a website 
 ### Skeleton
 
 #### Wireframes
-+ [index.html Wireframes for Mobile]()
-+ [index.html Wireframes for Tablet]()
-+ [index.html Wireframes for Desktop]()
++ [index.html Wireframes for Mobile and Tablet](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/recipemobileandtablet.png)
++ [index.html Wireframes for Desktop](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/desktopview.png)
 
 ### Surface
 
