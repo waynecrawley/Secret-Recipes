@@ -1,5 +1,5 @@
 # Secret-Recipes
-![]()
+![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/chefhat.png)
 ### Introduction
 
 ## UX
