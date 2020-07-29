@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-    <!--loops through the recipe Database and displays all info in cards below-->
+    
     <div class="center">
     <img src="/static/images/chefhat.png" alt="chefs hat" class="home-image">
     <h1 class="home-message"> Tell us your secret!</h1>
@@ -9,6 +9,7 @@
     <div class="latest-bg">
     <h2 class="latest">Latest Recipes</h2>
     </div>
+    <!--loops through the recipe Database and displays all info in cards below-->
     {% for recipe in recipes %}
     <div class="row margin-row">
         <div class="col s12">

@@ -85,6 +85,7 @@ nav .brand-logo{
     padding-right: 20px;
 }
 
+/*-- Hides the Button for adding recipes on larger screen sizes--*/
 @media only screen and (min-width: 1024px){
 #buttonhome{
      display: none;
@@ -241,7 +242,6 @@ h1{
     font-size: 1.8rem;
     font-family: 'Pacifico', cursive;
     margin-left: 40px;
-
 }
 
 @media only screen and (min-width: 0){

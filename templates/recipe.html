@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<!-- Displays the invidual elements of each recipe -->
 <div class="row">
     <div class="col s12 m6 l4">
     <img class = "recipe_images" src="{{recipe.image}}">
@@ -27,24 +27,23 @@
     </div>
 </div>
 <div class="row back-colour">
-<div class="col s12">
-<h2 class="ingred-head">Ingredients</h2>
-<p class="ingred-style">{{recipe.ingredient_1}}</p>
-<p class="ingred-style">{{recipe.ingredient_2}}</p>
-<p class="ingred-style">{{recipe.ingredient_3}}</p>
-<p class="ingred-style">{{recipe.ingredient_4}}</p>
-<p class="ingred-style">{{recipe.ingredient_5}}</p>
-<p class="ingred-style">{{recipe.ingredient_6}}</p>
-<p class="ingred-style">{{recipe.ingredient_7}}</p>
-<p class="ingred-style">{{recipe.ingredient_8}}</p>
-<p class="ingred-style">{{recipe.ingredient_9}}</p>
-<p class="ingred-style">{{recipe.ingredient_10}}</p>
-<h2 class="ingred-head">Method</h2>
-<p class="ingred-style">{{recipe.method}}</p>
-<a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn btn-edit">Edit</a>
-<a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn btn-remove">Remove</a>
-</div>
+    <div class="col s12">
+        <h2 class="ingred-head">Ingredients</h2>
+        <p class="ingred-style">{{recipe.ingredient_1}}</p>
+        <p class="ingred-style">{{recipe.ingredient_2}}</p>
+        <p class="ingred-style">{{recipe.ingredient_3}}</p>
+        <p class="ingred-style">{{recipe.ingredient_4}}</p>
+        <p class="ingred-style">{{recipe.ingredient_5}}</p>
+        <p class="ingred-style">{{recipe.ingredient_6}}</p>
+        <p class="ingred-style">{{recipe.ingredient_7}}</p>
+        <p class="ingred-style">{{recipe.ingredient_8}}</p>
+        <p class="ingred-style">{{recipe.ingredient_9}}</p>
+        <p class="ingred-style">{{recipe.ingredient_10}}</p>
+        <h2 class="ingred-head">Method</h2>
+        <p class="ingred-style">{{recipe.method}}</p>
+        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn btn-edit">Edit</a>
+        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn btn-remove">Remove</a>
+    </div>
 <div>
-</div>
 
 {% endblock %}

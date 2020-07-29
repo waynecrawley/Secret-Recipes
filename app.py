@@ -35,7 +35,7 @@ def add_recipe():
     course=mongo.db.course.find())
 
 
-# Fuction to insert recipes into the DatabaseS
+# Fuction to insert recipes into the Databases
 @app.route('/insert_recipes', methods=['POST'])
 def insert_recipes():
     recipes = mongo.db.recipes
