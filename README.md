@@ -32,7 +32,7 @@ The website was built with a mobile first approach. The client wanted a website 
 ![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/flowchart.png)
 
 #### Database Schema
-
+![]() ![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/coursecollection.png)
 
 ### Skeleton
 
