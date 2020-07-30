@@ -1,7 +1,10 @@
 # Secret-Recipes
 ![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/chefhat.png)
 ### Introduction
-
+This Project was A milestone Project focused on building a Data centric Webpage for Code institute.
+This was to be achieved using technologies such as the flask framework for simplfing development
+and Mongdb for storing information in a  database. I decided that a simple web app for adding,editing, delteing recipes would
+best help me to achieve this.
 ## UX
 The website was built with a mobile first approach. The client wanted a website that was easy to use and simple to navigate
 ### User Stories
