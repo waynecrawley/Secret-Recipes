@@ -111,6 +111,15 @@ nav .brand-logo{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30PX;
+    margin-top: 25px;
+}
+
+.latest-all{
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30PX;
     margin-top: 0px;
 }
 
