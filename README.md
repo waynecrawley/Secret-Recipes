@@ -32,7 +32,15 @@ The website was built with a mobile first approach. The client wanted a website 
 ![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/flowchart.png)
 
 #### Database Schema
-![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/recipecollection.png) ![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/coursecollection.png)
++ The Database chosen for this project was the NOSQL database [MongoDB] (https://www.mongodb.com/cloud/atlas).The Data base consists of two
+collections shown below. A recipes collection and a course type collection. I added the second course type collection because in a future 
+iteration of this project i want to be able to implemnt a search by course type function.
+
++ An example of Recipe collection consisting of an _id(object) and the users inputed info('string).
+![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/recipecollection.png)
+
++ An example of Course Type collection consisting of an _id(object) and course type info('string).
+ ![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/coursecollection.png)
 
 ### Skeleton
 
@@ -51,9 +59,12 @@ The website was built with a mobile first approach. The client wanted a website 
   * On Mobile these links are hidden in a sidenav for better functionality.
 + **Add Recipe Button** - The add recipe button is featured on the home page on Mobile and tablet to take the user directly to the form to add recipes.
 + **Materialize cards** - Materialize cards were used to house the recipes title and imamges on the home and all recipes pages.
-+ **Form** - A form was used to make for the user to be able to add and edit data to the database.
++ **Form** - A form was used to make for the user to be able to add,edit and delete data to the database.
 
 ### Features Left to Implement
+
++ **Search function** - In a future iteration i want to implement an option that the user can search by course type and indvidual recipes.
++ **Login** -  The ability for the user to login and only they may edit or delete there own recipes.
 
 ## Technologies Used
 ### Frontend
