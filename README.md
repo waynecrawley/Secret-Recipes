@@ -32,14 +32,16 @@ The website was built with a mobile first approach. The client wanted a website 
 ![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/flowchart.png)
 
 #### Database Schema
-+ The Database chosen for this project was the NOSQL database [MongoDB] (https://www.mongodb.com/cloud/atlas).The Data base consists of two
++ The Database chosen for this project was the NOSQL database [MongoDB](https://www.mongodb.com/cloud/atlas) . The Data base consists of two
 collections shown below. A recipes collection and a course type collection. I added the second course type collection because in a future 
 iteration of this project i want to be able to implemnt a search by course type function.
 
 + An example of Recipe collection consisting of an _id(object) and the users inputed info('string).
+
 ![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/recipecollection.png)
 
 + An example of Course Type collection consisting of an _id(object) and course type info('string).
+
  ![](https://github.com/waynecrawley/Secret-Recipes/blob/master/static/images/coursecollection.png)
 
 ### Skeleton
