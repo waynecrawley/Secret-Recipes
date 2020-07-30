@@ -3,8 +3,9 @@
 ### Introduction
 This Project was A milestone Project focused on building a Data centric Webpage for Code institute.
 This was to be achieved using technologies such as the flask framework for simplfing development
-and Mongdb for storing information in a  database. I decided that a simple web app for adding,editing, delteing recipes would
-best help me to achieve this.
+And Mongdb for storing information in a database. I decided that a simple web app for adding, editing, deleting recipes would
+Best help me to achieve this.
+
 ## UX
 The website was built with a mobile first approach. The client wanted a website that was easy to use and simple to navigate
 ### User Stories
@@ -14,12 +15,12 @@ The website was built with a mobile first approach. The client wanted a website 
 **So that** It’s easy to find Latest Recipes 
 
 **As a** New Visitor   
-**I want**  to see all recipes avaialble
+**I want**  to see all recipes available
 **So that**  I have a good variety to view
 
 **As a** Returning Visitor  
 **I want** to be able to add new recipes   
-**So that** i can share my recipes with the world 
+**So that** I can share my recipes with the world 
 
 ### Strategy
  + This project is for the creation of a website for Secret Recipes to help people share recipes and also  that is visually pleasing and has an ease of use.
@@ -33,8 +34,8 @@ The website was built with a mobile first approach. The client wanted a website 
 
 #### Database Schema
 + The Database chosen for this project was the NOSQL database [MongoDB](https://www.mongodb.com/cloud/atlas) . The Data base consists of two
-collections shown below. A recipes collection and a course type collection. I added the second course type collection because in a future 
-iteration of this project i want to be able to implemnt a search by course type function.
+Collections shown below. A recipes collection and a course type collection. I added the second course type collection because in a future 
+Iteration of this project i want to be able to implemnt a search by course type function.
 
 + An example of Recipe collection consisting of an _id(object) and the users inputed info('string).
 
@@ -52,7 +53,7 @@ iteration of this project i want to be able to implemnt a search by course type 
 
 ### Surface
 
-+ A Mostly black and white colour theme was used for this website, which showcases the classic professional look. 
++ A Mostly black and white colour theme was used for this website, which showcases the classic professional look. Cards were used on the home page fro the recipe becuae it makes the page look very clean and simplistic.
 
 
 # FEATURES
@@ -73,11 +74,13 @@ iteration of this project i want to be able to implemnt a search by course type 
 + **HTML** - This is the Markup Language used to create the main structure of the website.
 + **CSS** - I used CSS to style the visual look of the webpage.
 + **jQuery** -[jQuery](https://jquery.com/) used to help Materializecss Intialization
++ **Javascript** - used in sidenavbar
 
 ### Backend
 + **MongoDB** - [MongoDB](https://www.mongodb.com/cloud/atlas) was the database used
 + **FLask** - [Flask] Flask is the micro web framework i used thats written in Python.
 + **Jinja2** - [Jinja2] The templating language used for python
++ **python** - used to loop through recipes
 
 
 ### Other technologies used
@@ -114,18 +117,40 @@ iteration of this project i want to be able to implemnt a search by course type 
 'image': request.form.get('image'),
 
 ## Deployment
-+ This Website was developed using [Gitpod](https://www.gitpod.io/). I commited to Git and Pushed to [Github](https://github.com/)
 
- I also pushed to heroku using the command line.
-### How to Deploy
+### How to Deploy our project to Heroku ###
 
-### How to Deploy Locally
++ First we need create a requiremnets.txt file in our IDE
++ We do this by typing in the command terminal pip freeze > requirements.txt
++ Next we need to create a procfile
++ We do this by typing into the command terminal echo web: python.py > procfile
++ Next we need to git add . , git commit -m ' ' and finally git push or requiremnets file and proc file to our Github repository.
++ Login to www.heroku.com
++ Create new app
++ Name your app and choose your region
++ Click create app
++ In your command termianl IN OUR IDE you need to type heroku login
++ Enter requested Username and Password
++ In command terminal type heroku git:remote Secret-Recipes 
++ In command terminal git add . , git commit -m ' '
++ In command terminal git push heroku master
++ Return to heroku.com
++ Click on Settings
++ Click on reveal Config Vars
++ Set IP to 0.0.0.0
++ Set Port  TO 5000
++ Add your MONGO_URI and Sexret key to link to your database
++ Now click Open app to deploy your webapp
+
 
 ## Credits
 ### Content
+My project was a heavly modified from the two walkthroughs we done in the Datacentric Milestone sections
 
 ### Media
-
++ This project is for educational purposes
++ ImageS used are from unsplash, BBCGOODFOOD 
++ Chef image also obtained from https://www.flaticon.com/
 ### Acknowledgements
 
 + I would like to thank my Mentor who has been a fantastic guidence for me.
